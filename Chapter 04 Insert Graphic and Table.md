@@ -9,16 +9,47 @@
 \usepackage{graphicx}
 % 语法
 \includegraphics[<选项>]{<文件名>}
-% 图片格式
+% 图片格式，图片格式可省略（不建议）
 % *.eps, *.pdf, *.png, *.jpeg, *.bmp
-% 文件路径
+% 搜索路径
 \graphicspath{{figures/},{pics/}}
 % 文件在当前目录下的 figures 和 pics 目录 
 ```
 
 **帮助文档：**texdoc graphic
 
-### 1.2. 图片设置
+### 1.2. 图片路径
+
+建议使用相对路径，不要使用绝对路径，提升代码的可移植性。
+
+建议不要使用空格、中文、下划线（建议使用短横线）命名文件。
+
+- **相对路径**
+
+`\includegraphics{figure1.png}`
+
+ `./`表示当前路径， `../`表示当前路径的上一路径
+
+`\includegraphics{./figure1.png}`
+
+`\includegraphics{./figs/figure1.png}`
+
+- **绝对路径**
+
+`\includegraphics{C:/figs/figure1.png}`
+
+- **搜索路径**
+
+在导言区
+
+`\graphicspath{{figures/},{pics/}}`
+
+`\graphicspath{{C:figures/},{../pics/}}`
+
+
+### 1.3. 图片设置
+
+
 
 
 
