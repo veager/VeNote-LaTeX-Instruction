@@ -23,11 +23,9 @@
 
 **cmd命令**
 
-texdoc ctex ctex宏包手册
+`texdoc ctex` ctex宏包手册
 
-texdoc lshort-zh  一份不太简单的 ${\LaTeX 2\epsilon}$ 介绍
-
-
+`texdoc lshort-zh`  一份不太简单的 ${\LaTeX 2\epsilon}$ 介绍
 
 在线LaTeX编译 [overleaf](https://www.overleaf.com/)
 

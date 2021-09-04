@@ -32,11 +32,24 @@ LaTeX排版中，排版内容分为**文本模式**和**数学模式**。**数�
 
 `\usepackage{amssymb}` 特殊符号
 
-## 2. 希腊字母
+## 2. 特殊符号
+
+### 2.1. 特殊符号对照表
 
 LaTeX 希腊字母命令
 
 [Latex常见符号对照表]([Latex常见符号对照表_赵氏春秋-CSDN博客_latex符号表](https://blog.csdn.net/zgj926503/article/details/52757631))
+
+### 2.2. 特殊字体
+
+| 命令             | 样式               |              |
+| ---------------- | ------------------ | ------------ |
+| `A`              | ${A}$              | 斜体         |
+| `\mathrm{A}`     | ${\mathrm{A}}$     | 正体         |
+| `\mathbf{A}`     | ${\mathbf{A}}$     | 正体，加粗   |
+| `\bolfsymbol{A}` | ${\boldsymbol{A}}$ | 斜体，加粗   |
+| `\mathcal{A}`    | ${\mathcal{A,N}}$  | 花体，手写体 |
+| `\mathbb{A}`     | ${\mathbb{A,R,N}}$ | 空心         |
 
 ## 3. 数学矩阵
 
@@ -70,26 +83,23 @@ LaTeX 希腊字母命令
 
 ## 4. 多行公式
 
-1. gather 和 gather\* 环境
-
+1. `gather` 和 `gather\*` 环境
    - 使用`\\`换行。默认会对每一行公式都自动编号。
-
+   
    - 可以在`\\`前使用`\notag` 阻止编号
-
-2. align 和 align\* 环境
-
+   
+2. `align` 和 `align\*` 环境
    - 多公式多行对齐，通过`&`指定对齐位置
-
-3. split 和 split\* 环境，嵌套在`equation`环境中
-
+   
+3. `split` 和 `split\*` 环境，嵌套在`equation`环境中
    - 单公式多行对齐，通过`&`指定对齐位置
-
+   
    - 只有一个编号
-
-4. cases 和 cases\* 环境，嵌套在`equation`环境中
-
-   - 条件公式
+   
+4. `cases` 和 `cases\*` 环境，嵌套在`equation`环境中
+- 条件公式
    
    - 每行公式中使用 `&` 分隔为两部分，实现条件对齐
+   
+- 使用`\\`实现换行，多条件
 
-   - 使用`\\`实现换行，多条件
