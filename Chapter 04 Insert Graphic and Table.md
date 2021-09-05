@@ -55,7 +55,7 @@
 
 ## 2. 设置表格
 
-### 2.1. 命令
+### 2.1. 基本命令`tabular`
 
 ```latex
 \begin{tabular}[<垂直对齐方式>]{<列格式说明>}
@@ -73,6 +73,46 @@
 - 正文区（文稿区）
 
 **帮助文档：** texdoc booktab，texdoc longtab，texdoc tabu
+
+### 2.2. 进阶操作
+
+#### 2.2.1. 跨行与跨行
+
+- `\multicolumn{<num_cols>}{<alignment>}{<contents>}`
+
+- `\multirow{<num_rows>}{<width>}{<contents>}`，需要引入宏包`\usepackage{multirow}`
+- `\cline{n1-n2}`从某一列到某一列画横线
+
+#### 2.2.2. 表格内换行
+
+- 借助`\makecell`命令实现，需要引入宏包`\usepackage{makecell}`
+- `\makecell[<vertical or/and horizontal alignment>]{<hcell text>}`
+
+#### 2.2.3. 三线表
+
+- 需要引入宏包`\usepackage{booktabs}`
+- `\toprule`，`\midrule`，`\bottomrule`
+
+#### 2.2.4. 实例
+
+```latex
+\begin{center} 
+    \begin{tabular}[c]{cccc}
+        \toprule
+         & \multicolumn{2}{c}{Tons of raw material per ton of} & \multirow{2}{*}{\makecell[c]{Maximum daily \\ availability (tons) \\}} \\
+        \cline{2-3}
+         & \textit{Exterior paint} & \textit{Interior paint}  \\
+        \midrule
+        Raw material, ${M1}$ & 6 & 4 & 14  \\
+        Raw material, ${M2}$ & 1 & 2 & 6   \\
+        \midrule
+        Profit per ton (\$1,000) & 5 & 4 & \\
+        \bottomrule
+    \end{tabular} 
+\end{center}
+```
+
+<img src="pics/pics-chp2-1-tabular.jpg" alt="pics-chp2-1-tabular" style="zoom:80%;" />
 
 
 
