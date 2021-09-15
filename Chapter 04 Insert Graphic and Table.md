@@ -55,7 +55,7 @@
 
 ## 2. 设置表格
 
-### 2.1. 基本命令`tabular`
+### 2.1. `tabular`
 
 ```latex
 \begin{tabular}[<垂直对齐方式>]{<列格式说明>}
@@ -64,11 +64,11 @@
 \end{tabular}
 ```
 
-- 用`\\`表示换行
-- 用`&`表示不同的列
+- 用`\\`表示换行；用`&`表示不同的列
 - `l`本列左对齐，`c`本列居中对齐，`r`本列右对齐
 - `|`表示单竖线，`||`表示双竖线
 - `\hline` 表示单横线，`\hline \hline`表示双横线
+- `\cline{n1-n2}`从某一列`n1`到某一列`n2`画横线
 - `p{<宽>}`本列宽度固定，能够自动换行
 - 正文区（文稿区）
 
@@ -81,7 +81,6 @@
 - `\multicolumn{<num_cols>}{<alignment>}{<contents>}`
 
 - `\multirow{<num_rows>}{<width>}{<contents>}`，需要引入宏包`\usepackage{multirow}`
-- `\cline{n1-n2}`从某一列到某一列画横线
 
 #### 2.2.2. 表格内换行
 
@@ -164,3 +163,4 @@
 ```latex
 \ref{label} 如: \ref{fig-1}
 ```
+
