@@ -82,16 +82,6 @@
 
 - `\multirow{<num_rows>}{<width>}{<contents>}`，需要引入宏包`\usepackage{multirow}`
 
-#### 2.2.2. 表格内换行
-
-- 借助`\makecell`命令实现，需要引入宏包`\usepackage{makecell}`
-- `\makecell[<vertical or/and horizontal alignment>]{<hcell text>}`
-
-#### 2.2.3. 三线表
-
-- 需要引入宏包`\usepackage{booktabs}`
-- `\toprule`，`\midrule`，`\bottomrule`
-
 #### 2.2.4. 实例
 
 ```latex
