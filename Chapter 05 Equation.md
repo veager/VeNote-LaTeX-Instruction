@@ -49,7 +49,7 @@ LaTeX 希腊字母命令
 | `A`              | ${A}$              | 斜体         |
 | `\mathrm{A}`     | ${\mathrm{A}}$     | 正体         |
 | `\mathbf{A}`     | ${\mathbf{A}}$     | 正体，加粗   |
-| `\bolfsymbol{A}` | ${\boldsymbol{A}}$ | 斜体，加粗   |
+| `\boldsymbol{A}` | ${\boldsymbol{A}}$ | 斜体，加粗   |
 | `\mathcal{A}`    | ${\mathcal{A,N}}$  | 花体，手写体 |
 | `\mathbb{A}`     | ${\mathbb{A,R,N}}$ | 空心         |
 
