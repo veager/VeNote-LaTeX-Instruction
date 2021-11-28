@@ -4,10 +4,6 @@
 
 用于设置代码块
 
-- 参考资料
-
-[LaTeX listings 宏包使用说明（一）](https://zhuanlan.zhihu.com/p/261667944), 知乎.
-
 ### 1. 引入与使用
 
 引入宏包
@@ -18,13 +14,26 @@
 
 使用
 
+- 常规使用代码块
+
 ```latex
 \begin{lstlisting}
 	codes
 \end{lstlisting}
 ```
 
+- 从文件中导入代码块
 
+```Latex
+\lstinputlisting[language=Python]{main.py}
+\lstinputlisting[language=Python, firstline=2, lastline=12]{main.py}
+```
+
+- 行内代码
+
+```latex
+\lstinline|mycodes|
+```
 
 
 ### 2. 设置命令
@@ -111,5 +120,5 @@
 
 ### 参考资料
 
-[*LaTeX listings 宏包使用说明（一）*](https://zhuanlan.zhihu.com/p/261667944). 知乎专栏.  
+[1] [*LaTeX listings 宏包使用说明（一）*](https://zhuanlan.zhihu.com/p/261667944). 知乎专栏.  
 
